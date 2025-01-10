@@ -7,7 +7,7 @@
 This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
 
 <h2>Prerequisites</h2>
-See this link for help creating Virtual Machines www.github.com/anakamura1/wm-creation
+See this link for help creating Virtual Machines www.github.com/anakamura1/vm-creation
 
 <h2>Environments and Technologies Used</h2>
 
