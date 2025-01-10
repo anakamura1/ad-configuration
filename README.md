@@ -42,12 +42,20 @@ Create two VMs in Azure ensuring that they are in the SAME VIRTUAL NETWORK and S
 <p>Name second VM Client-1 and set the image to Windows 10.</p>
 <br />
 
+<table>
+  <tr>
+    <td>
+      <img width="1000" alt="Screenshot 2025-01-10 at 11 14 11 AM" src="https://github.com/user-attachments/assets/b2d7a15b-576c-486b-829f-b449b141273f" />
+    </td>
+    <Td>
+      <img width="1000" alt="Screenshot 2025-01-10 at 11 14 26 AM" src="https://github.com/user-attachments/assets/580bf4f9-9c8e-4bb9-a3fa-d71325a23fa3" />
+
+    </Td>
+  </tr>
+</table>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
+Click into DC-1 -> Network Settings -> Network Interface. We will configure DC-1 to have a static IP address.</p>
+<p>Navigate to ipconfig1 -> select Static </p>
 <br />
 
 <p>
