@@ -168,3 +168,9 @@ Open Active Directory Users & Computers from within the start menu. By right cli
 </p>
 <p>We can verify the join was successful by going back into DC-1 and Active Directory Users and Computers (ADUS) and finding Client-1 within the Computer tab.</p>
 <p>Create a new OU named _CLIENTS and drag Client-1 into it.</p>
+<br>
+
+<p><img height="70%" width="70%" alt="Screenshot 2025-01-10 at 1 57 16 PM" src="https://github.com/user-attachments/assets/fb4e131a-3403-4312-8de2-c888ccba6edc" />
+</p>
+<p>Log into Client-1 as Jane.Admin -> System -> Remote Desktop -> Select users that can remotely access this PC -> Add -> Domain Users -> Check names -> OK</p>
+<p>This will allow any user under the Domain Users group in the domain controller to be able to log into Client-1. We will create users in the User Creation lab. </p>
