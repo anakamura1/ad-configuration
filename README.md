@@ -117,3 +117,34 @@ Once the settings are saved navigate back to the virtual machines homepage and g
 <p>Log in to DC-1 and in server manager click "Add role and features". From here add a feature to install Active Directory Domain Services. Click through next to install AD DS. </p>
 <p>Once AD DS is installed, go to the top right flag in the server manager and promote the server to become a domain controller. Add a new forest named mydomain.com and continue through the setup wizard. (Be sure to uncheck DNS delegation as you progress through the setup </p>
 <p>Once the setup is finished, the VM will reboot.</p>
+
+<p>
+  <img height="50%" width="50%" alt="Screenshot 2025-01-10 at 12 13 39 PM" src="https://github.com/user-attachments/assets/da2a27f4-7efe-4751-b072-d49b9c586f9b" />
+</p>
+<p>Remote desktop back into DC-1 but this time with a domain specific user. Enter "mydomain.com\anakamura1" (mydomain.com\username)</p>
+<p>This will log in as a specific user within the domain.</p>
+
+<table>
+  <tr>
+    <td>
+      <img width="1000" alt="Screenshot 2025-01-10 at 12 20 56 PM" src="https://github.com/user-attachments/assets/2cf2301e-9cbc-439b-b1f3-1d6a3d9da1e9" />
+    </td>
+    <td>
+      <img width="1000" alt="Screenshot 2025-01-10 at 12 22 39 PM" src="https://github.com/user-attachments/assets/b0fc2b04-0071-45a0-9bdb-0d61de52d517" />
+    </td>
+  </tr>
+</table>
+<p>
+Open Active Directory Users & Computers from within the start menu. By right clicking on mydomain, create a new Organizational Unit (OU).
+</p>
+<p>Create one named _EMPLOYEES and create another named _ADMINS</p>
+<p> Once both OUs are created, within _ADMINS right click to create a new user. We will name this user Jane Admin and configure her login credentials.</p>
+<p>Something like jane.admin and a password we can remember will suffice.</p>
+<br>
+<p>
+  <img height="80%"  width="80%" alt="Screenshot 2025-01-10 at 12 24 26 PM" src="https://github.com/user-attachments/assets/d7ab9ddf-10b3-4c57-b6ee-cf5af9e25c58" />
+</p>
+<p>Once she is created, right click on her to access Properties -> Members of, and add her to "Domain Admins". Be sure to click "Check Names" and apply when finished.</p>
+<p>Log out of DC-1 and log back in as “mydomain.com\jane.admin”</p>
+ <p>We can use jane.admin as the admin account from now on
+</p>
