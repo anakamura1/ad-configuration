@@ -148,3 +148,23 @@ Open Active Directory Users & Computers from within the start menu. By right cli
 <p>Log out of DC-1 and log back in as “mydomain.com\jane.admin”</p>
  <p>We can use jane.admin as the admin account from now on
 </p>
+<table>
+  <tr>
+    <td>
+      <img width="1000" alt="Screenshot 2025-01-10 at 12 48 48 PM" src="https://github.com/user-attachments/assets/bdbe01e6-be63-4e4d-b1f9-43fb08c579f7" />
+    </td>
+    <td>
+      <img width="1000" alt="Screenshot 2025-01-10 at 12 49 59 PM" src="https://github.com/user-attachments/assets/95d36f94-6435-48dd-9539-aaaf8ef2ced8" />
+    </td>
+  </tr>
+</table>
+<p>Login to Client-1 as the original local admin (anakamura1)</p>
+<p>From the start menu -> System -> Rename this PC Advanced -> Change, and enter mydomain.com</p>
+<p>This will prompt a login screen where we can login as mydomain.com\jane.admin and join Client-1 to the domain controller DC-1</p>
+<br>
+<p>
+  <img height="65%" width="65%" alt="Screenshot 2025-01-10 at 12 51 14 PM" src="https://github.com/user-attachments/assets/879e5f17-fff9-49c3-a64e-ff894bae6e4c" />
+
+</p>
+<p>We can verify the join was successful by going back into DC-1 and Active Directory Users and Computers (ADUS) and finding Client-1 within the Computer tab.</p>
+<p>Create a new OU named _CLIENTS and drag Client-1 into it.</p>
