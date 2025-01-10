@@ -193,3 +193,5 @@ Within DC-1 as Jane.Admin, open PowerShell ISE as ADMINISTRATOR and paste the fo
 </table>
 <p>Check within ADUC and under _EMPLOYEES to see all the created users. Select any user and log into Client-1 to test access</p>
 <p>All the created users should have access because we gave domain users access to remote desktop in Client-1</p>
+
+**This concludes this walkthrough! Check out Group Policy Objects next**
