@@ -103,3 +103,17 @@ Once the settings are saved navigate back to the virtual machines homepage and g
 </table>
 <P>Within Client-1 open up PowerShell and ping DC-1 to ensure that both VMs are on the same virtual network and that DC-1's firewall is disabled.</P>
 <p>Next, type "ipconfig /all and look to make sure the DNS server of Client-1 is set to DC-1's private IP address.</p>
+
+<table>
+  <tr>
+    <td>
+      <img width="1000" alt="Screenshot 2025-01-10 at 11 55 49 AM" src="https://github.com/user-attachments/assets/31d7050b-49bc-401a-8ac9-7c8302e1fd6b" />
+    </td>
+    <td>
+      <img width="1000" alt="Screenshot 2025-01-10 at 12 00 15 PM" src="https://github.com/user-attachments/assets/7428a488-ab52-4818-af69-44d77e946222" />
+    </td>
+  </tr>
+</table>
+<p>Log in to DC-1 and in server manager click "Add role and features". From here add a feature to install Active Directory Domain Services. Click through next to install AD DS. </p>
+<p>Once AD DS is installed, go to the top right flag in the server manager and promote the server to become a domain controller. Add a new forest named mydomain.com and continue through the setup wizard. (Be sure to uncheck DNS delegation as you progress through the setup </p>
+<p>Once the setup is finished, the VM will reboot.</p>
