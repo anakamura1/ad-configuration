@@ -174,3 +174,5 @@ Open Active Directory Users & Computers from within the start menu. By right cli
 </p>
 <p>Log into Client-1 as Jane.Admin -> System -> Remote Desktop -> Select users that can remotely access this PC -> Add -> Domain Users -> Check names -> OK</p>
 <p>This will allow any user under the Domain Users group in the domain controller to be able to log into Client-1. We will create users in the User Creation lab. </p>
+
+Within DC-1 as Jane.Admin, open PowerShell ISE as ADMINISTRATOR and paste the following [script](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)
