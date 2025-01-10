@@ -33,11 +33,13 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img height="80%" width="80%" alt="Screenshot 2025-01-10 at 11 09 35 AM" src="https://github.com/user-attachments/assets/467fabbc-f917-4879-89b2-a9938178dc86" />
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
+Create two VMs in Azure ensuring that they are in the SAME VIRTUAL NETWORK and SUBNET MASK (see networking tab when creating VM). </p>
+<p>Name one DC-1 (Domain Controller) and set the image to Windows Server 2022.</p>
+<p>Name second VM Client-1 and set the image to Windows 10.</p>
 <br />
 
 <p>
