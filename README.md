@@ -163,7 +163,7 @@ Open Active Directory Users & Computers from within the start menu. By right cli
 <p>This will prompt a login screen where we can login as mydomain.com\jane.admin and join Client-1 to the domain controller DC-1</p>
 <br>
 <p>
-  <img height="65%" width="65%" alt="Screenshot 2025-01-10 at 12 51 14 PM" src="https://github.com/user-attachments/assets/879e5f17-fff9-49c3-a64e-ff894bae6e4c" />
+  <img height="70%" width="70%" alt="Screenshot 2025-01-10 at 12 51 14 PM" src="https://github.com/user-attachments/assets/879e5f17-fff9-49c3-a64e-ff894bae6e4c" />
 
 </p>
 <p>We can verify the join was successful by going back into DC-1 and Active Directory Users and Computers (ADUS) and finding Client-1 within the Computer tab.</p>
@@ -174,5 +174,22 @@ Open Active Directory Users & Computers from within the start menu. By right cli
 </p>
 <p>Log into Client-1 as Jane.Admin -> System -> Remote Desktop -> Select users that can remotely access this PC -> Add -> Domain Users -> Check names -> OK</p>
 <p>This will allow any user under the Domain Users group in the domain controller to be able to log into Client-1. We will create users in the User Creation lab. </p>
+<p><img height="70%" width="70%" alt="Screenshot 2025-01-10 at 2 04 29 PM" src="https://github.com/user-attachments/assets/a82987f7-3213-46ec-854c-c7fcfe1bdfcf" />
+</p>
 
 Within DC-1 as Jane.Admin, open PowerShell ISE as ADMINISTRATOR and paste the following [script](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)
+
+<p>Be sure to edit the password you want the users to have at the top of the script text.</p>
+
+<table>
+  <tr>
+    <td>
+      <img width="800" alt="Screenshot 2025-01-10 at 2 06 42 PM" src="https://github.com/user-attachments/assets/efe9998e-9049-4264-ac02-4e3973800ad3" />
+    </td>
+    <td>
+      <img width="436" alt="Screenshot 2025-01-10 at 2 08 30 PM" src="https://github.com/user-attachments/assets/c15e853d-0426-47f8-bc40-2104ded6c39c" />
+    </td>
+  </tr>
+</table>
+<p>Check within ADUC and under _EMPLOYEES to see all the created users. Select any user and log into Client-1 to test access</p>
+<p>All the created users should have access because we gave domain users access to remote desktop in Client-1</p>
